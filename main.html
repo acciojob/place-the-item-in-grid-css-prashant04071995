@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>2x2 Grid</title>
 
+
+<style type="text/css">
+  
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#holder {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  width: 200px;
+  height: 200px;
+
+#eg1 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: pink;
+}
+#eg2 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: yellow;
+}
+
+#eg3 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: red;
+}
+#eg4 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: green;
+}
+
+
+
+
+</style>
+
+</head>
 <body>
-    <div class="holder">
-    	<div class="item item-1">1</div>
-    	<div class="item item-2">2</div>
-    	<div class="item item-3">3</div>
-    	<div class="item item-4">4</div>
-   </div>
-   <script type="text/javascript" src="./script.js">
-</script>
+
+  <div id="holder">
+     <div id="eg1"></div>
+        <div id="eg2"></div>
+        <div id="eg3"></div>
+        <div id="eg4"></div>
 
 </body>
-
 </html>
